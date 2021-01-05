@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<script>
+    var wordCount = 0;
+function wordCounter() {
+            var text = document.getElementById("inputString").value;
+            
+            
+            for (var i = 0; i <= text.length; i++) {
+              if (text.charAt(i) == ' ') {
+                wordCount++;
+              }
+            }wordCount++;
+        
+            // var t = document.write("The number of words is " + wordCount + ".");
+            // t.innerText = "wordCount";
+            alert("The number of words is " + wordCount)
+            
+          }</script>
+<body>
+    <div class="content">
+        <h1>Word-Counter</h1>
+        <textarea name="inputString" id="inputString" placeholder="Type your content here!"></textarea>
+        <br>
+        <button type="button" id="myButton" onclick="wordCounter()">Count Words!</button>
+        <!-- <div onload="document.innerHTML(wordCount)"> 
+            
+            <h2>The number of words is:</h2> -->
+        </div>
+      </div>
+</body>
+
+</html>
